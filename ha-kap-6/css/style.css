@@ -5,7 +5,6 @@ body {
 h1 {
 	text-align: center;
 }
-form,
 table {
 	margin-left: auto;
 	margin-right: auto;
@@ -29,22 +28,6 @@ table tr td td {
 p {
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 5px;
-	width: 90%;
-}
-fieldset { 
-	border: 2px solid #cccccc; 
-	border-radius: 6px; 
-	background: white; 
-} 
-legend {
-	padding: 5px 10px 5px 10px;
-	font-size: 0.8em;
-	font-weight: bold;
-}
-label {
 	padding-left: 2px;
-}
-input.button {
-	margin-top: 10px;
+	width: 90%;
 }
