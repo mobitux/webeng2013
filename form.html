@@ -18,6 +18,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="css/form.css" />
   </head>
   <body>
     <!-- Wrap all page content here -->
@@ -36,7 +37,7 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="imprint.html">Impressum</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -45,18 +46,21 @@
       <!-- Begin page content -->
       <div class="container">
         <div class="page-header">
-          <h1>Website in der Cloud</h1>
+          <h1>Aufgabe: Barrierefreies Suchformular</h1>
         </div>
-	<div>
-          <h2>Aufgabe: Mit CSS formatierte Tabelle aller "XHTML 1.0 strict"-Elemente</h2>
-          <p class="lead">In dieser Hausaufgabe sollte eine XHTML-1.0-strict-Seite erstellt werden, die in tabellarischer Form alle 77 Elemente zeigt. Zu jedem dieser Elemente sollte neben der Beschreibung auch angegeben werden, ob es sich um ein Block- oder Inline-Element sowie semantisches HTML handelt.</p>
-          <p><a href="table.html">Zur Aufgabe</a></p>
-	</div>
-	<div>
-          <h2>Aufgabe: Barrierefreies Suchformular</h2>
-          <p class="lead">In dieser Hausaufgabe sollte f&uuml;r die deutsche Wikipedia ein barrierefreies Webformular f&uuml;r die Suche nach Artikeln entwickelt werden. Das Formular sollte den Richtlinien nach WCAG 2.0 AAA und Section 508 entsprechen.</p>
-          <p><a href="form.html">Zur Aufgabe</a></p>
-	</div>
+	<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
+		<fieldset>
+			<legend>In Wikipedia suchen</legend>
+			<label for="search">Suchbegriff</label><br />
+			<input id="search" type="text"  name="search" value="" size="50" /><br />
+			<input class="button" type="submit" name="go" value="Artikel"/>
+			<input class="button" type="submit" name="fulltext" value="Volltext" />
+		</fieldset>
+	</form>
+	<br />
+	<p><a href="http://wave.webaim.org/report#/michaelniewiara.cloudcontrolled.com/form.html" title="Put your title here"><img height="32" width="88" src="http://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
+</a></p>
+	</p>
       </div>
     </div>
     <div id="footer">
